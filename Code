@@ -1,0 +1,22 @@
+!pip install bing-image-downloader
+from bing_image_downloader import downloader
+import wikipedia
+
+
+Option = input("do you want to about a manga or author? ") #Options are the manga name, the authors name or the company that publishes the manga
+if Option == "manga":
+  manga = input("Please enter the manga name: ") #User searches by the manga name
+if Option == "author":
+  author = input("Please enter the authors name: ") #User searches by the Authors name
+  
+if Option == "manga":
+  manga1 = input(f"Do you want to know about {manga} or do you want to see images of the {manga}?(info or image) ")
+  if manga1 == "info":
+    info = wikipedia.summary(manga, 2)
+    print(info)
+  if manga1 == "image":
+    downloader.download(manga + "manga cover" , limit=1, output_dir='publisher', adult_filter_off=True, force_replace=False, timeout=5)
+  
+if Option == "author":
+    info = wikipedia.summary(author, 2)
+    print(info)
