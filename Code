@@ -15,7 +15,7 @@ if Option == "manga":
     info = wikipedia.summary(manga, 2)
     print(info)
   if manga1 == "image":
-    downloader.download(manga + "manga cover" , limit=1, output_dir='publisher', adult_filter_off=True, force_replace=False, timeout=5)
+    downloader.download(manga + "manga" , limit=1, output_dir='publisher', adult_filter_off=True, force_replace=False, timeout=5)
   
 if Option == "author":
     info = wikipedia.summary(author, 2)
