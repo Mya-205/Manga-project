@@ -4,6 +4,9 @@ If the user selects "manga" then they got two option- they can either get a desc
 ![image](https://user-images.githubusercontent.com/74416094/114315566-7aa27980-9af7-11eb-816e-7a835a904e40.png)
 ![image](https://user-images.githubusercontent.com/74416094/114315691-f00e4a00-9af7-11eb-9040-7f985cb3be17.png)
 
+Searching for a manga front cover (For example, Chainsaw man)
+
+
 
 
 If the user selects "author" then information about the author of a manga comes up (For example, searching for Hajime Isayama will come up with what series he created and other information about him too)
