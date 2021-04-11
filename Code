@@ -10,13 +10,13 @@ if Option == "author":
   author = input("Please enter the authors name: ") #User searches by the Authors name
   
 if Option == "manga":
-  manga1 = input(f"Do you want to know about {manga} or do you want to see images of the {manga}?(info or image) ")
+  manga1 = input(f"Do you want to know about {manga} or do you want to see images of the {manga}?(info or image) ") #asks if the user wants to get information on the manga or an image of the manga
   if manga1 == "info":
-    info = wikipedia.summary(manga, 2)
-    print(info)
+    info = wikipedia.summary(manga, 2) #gets information on the manga the user has inputted
+    print(info) #outputs this information
   if manga1 == "image":
-    downloader.download(manga + "manga" , limit=1, output_dir='publisher', adult_filter_off=True, force_replace=False, timeout=5)
+    downloader.download(manga + "manga" , limit=1, output_dir='publisher', adult_filter_off=True, force_replace=False, timeout=5) #Downloads an image of a manga cover
   
 if Option == "author":
-    info = wikipedia.summary(author, 2)
-    print(info)
+    info = wikipedia.summary(author, 2) #Gets information on the author the user has inputted
+    print(info) #outputs this information
